@@ -8,10 +8,7 @@
   <header class="main-header">
     <nav>
       <a href="index.html">
-        <img class="logo-img main-header__logo-img" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
-      </a>
-      <a href="index.html">
-        <img class="logo-text main-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+        <img class="logo main-header__logo" src="http://placehold.it/200x45" width="200" height="45" alt="Логотип Cat Energy">
       </a>
       <button class="main-header__burgers-button" type="button"></button>
       <ul class="menu-list main-header__list">
@@ -22,8 +19,8 @@
     </nav>
   </header>
 
-  <main class="form-main">
-    <section class="program form-main__form">
+  <main>
+    <section class="program">
       <h1 class="program__caption">Подбор программы</h1>
 
       <form class="program__form" name="program-form" action="https://echo.htmlacademy.ru" method="post">
@@ -121,7 +118,7 @@
       </form>
     </section>
 
-    <section class="contacts form-main__contacts">
+    <section class="contacts">
       <h2 class="visually-hidden contacts__caption">Контакты</h2>
       <p class="contacts__content">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -133,13 +130,27 @@
     <a href="index.html">
       <img class="logo-text main-footer__logo-text" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
     </a>
-    <div class="social main-footer__social">
-      <a class="social__vk" href=""><span class="visually-hidden">ВКонтакте</span></a>
-      <a class="social__insta" href=""><span class="visually-hidden">Instagram</span></a>
-      <a class="social__fb" href=""><span class="visually-hidden">Facebook</span></a>
-    </div>
-    <a class="main-footer__link-left" href="">HTML Academy</a>
-    <a class="main-footer__link-right" href=""><span class="visually-hidden">Логотип HTML Academy</span></a>
+    <ul class="social main-footer__social">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--insta" href="">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--fb" href="">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+    </ul>
+    <a class="main-footer__link-left" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="main-footer__link-right" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="visually-hidden">Логотип HTML Academy</span>
+    </a>
   </footer>
 </body>
 </html>
