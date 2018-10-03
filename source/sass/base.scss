@@ -5,6 +5,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2");
@@ -13,18 +14,14 @@
   font-weight: 500;
 }
 
-@import "normalize.scss";
-
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -34,7 +31,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
 }
 
@@ -48,8 +45,7 @@ body {
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 a {

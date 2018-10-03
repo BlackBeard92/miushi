@@ -1,5 +1,6 @@
 .product {
   padding: 24px 20px;
+
   &--last {
     text-align: center;
     font-size: 16px;
@@ -26,7 +27,7 @@
 }
 
 .product__sub-text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }

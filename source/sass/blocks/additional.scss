@@ -1,8 +1,10 @@
 .additional {
   padding: 14px 0 16px;
+
   &--line {
     border-top: 1px solid #cdcdcd;
   }
+
   &:last-of-type {
     border-bottom: 1px solid #cdcdcd;
   }
@@ -23,7 +25,7 @@
 }
 
 .additional__line-item {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 14px;
   font-weight: 400;
 }
