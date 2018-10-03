@@ -1,0 +1,32 @@
+.main-header {
+  padding-top: 11px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-header__conteiner {
+  margin-bottom: 15px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.main-header__navigation {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__burgers-button {
+  background-color: red;
+  width: 24px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+}
+
+.main-header__logo-link {
+  line-height: 0;
+}

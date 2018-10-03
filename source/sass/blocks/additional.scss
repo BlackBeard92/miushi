@@ -1,0 +1,29 @@
+.additional {
+  padding: 14px 0 16px;
+  &--line {
+    border-top: 1px solid #cdcdcd;
+  }
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional__caption {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional__table {
+  margin-bottom: 13px;
+}
+
+.additional__line-item {
+  font-family: Arial, sans-serif;
+  line-height: 14px;
+  font-weight: 400;
+}

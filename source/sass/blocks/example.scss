@@ -1,0 +1,44 @@
+.example {
+  padding: 30px 20px;
+  background-color: #f2f2f2;
+  color: #111111;
+}
+
+.example__caption {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__table {
+  margin-bottom: 20px;
+}
+
+.example__table-line {
+  font-size: 24px;
+  line-height: 24px;
+  &--th {
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+  }
+}
+
+.example__spending {
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
