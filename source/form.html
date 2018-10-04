@@ -38,26 +38,27 @@
         <p class="program__discription">
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
-        <div class="program__cat-characteristics">
+
+        <div class="program__block program__block--characteristics">
           <ul class="program__list">
             <li class="program__item">
-              <label class="program__name" for="name">Имя:*</label>
-              <input class="program__name-input" id="name" name="name" type="text" placeholder="Барсик" required>
+              <label class="program__label program__label--name" for="name">Имя:*</label>
+              <input class="program__input program__input--name" id="name" name="name" type="text" placeholder="Барсик" required>
             </li>
 
             <li class="program__item">
-              <label class="program__weight" for="weight">Вес (кг):*</label>
-              <input class="program__weight-input" id="weight" name="weight" type="text" placeholder="7" required>
+              <label class="program__label program__label--weight" for="weight">Вес (кг):*</label>
+              <input class="program__input program__input--weight" id="weight" name="weight" type="text" placeholder="7" required>
             </li>
 
             <li class="program__item">
-              <label class="program__age" for="age">Возраст (лет):</label>
-              <input class="program__age-input" id="age" name="age" type="text" placeholder="7">
+              <label class="program__label program__label--age" for="age">Возраст (лет):</label>
+              <input class="program__input program__input--age" id="age" name="age" type="text" placeholder="7">
             </li>
           </ul>
         </div>
 
-        <div class="program__control">
+        <div class="program__block program__block--control">
           <ul class="program__list">
             <li class="program__item">
               <input class="program__loss-input" id="weight-loss" name="control" value="weight-loss" type="radio" checked>
@@ -76,9 +77,8 @@
           </ul>
         </div>
 
-        <div class="program__contacts">
-          <h2 class="program__sub-caption">Контактные данные (владельца кота)</h2>
-
+        <h2 class="program__sub-caption">Контактные данные (владельца кота)</h2>
+        <div class="program__block program__block--contacts">
           <ul class="program__list">
             <li class="program__item">
               <label class="program__email" for="email">E-mail:*</label>
@@ -92,16 +92,14 @@
           </ul>
         </div>
 
-        <div class="program__comment">
-          <h2 class="program__sub-caption">Комментарий</h2>
-
+        <h2 class="program__sub-caption">Комментарий</h2>
+        <div class="program__block program__block--comment">
           <label class="visually-hidden" for="comment">Комментарий</label>
           <textarea class="program__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
-        <div class="program__extra">
-          <h2 class="program__sub-caption">Дополнительно</h2>
-
+        <h2 class="program__sub-caption">Дополнительно</h2>
+        <div class="program__block program__block--extra">
           <ul class="program__list">
             <li class="program__item">
               <input class="program__sweetener-input" id="sweetener" name="sweetener" type="checkbox" checked>
@@ -124,7 +122,8 @@
             </li>
           </ul>
         </div>
-        <button class="program__submit" type="submit">Отправить заявку</button>
+
+        <button class="button-link button-link--submit" type="submit">Отправить заявку</button>
         <small class="program__small-text">* — Обязательные поля</small>
       </form>
     </section>
