@@ -1,0 +1,47 @@
+.food-categories {
+  &--margin {
+    margin-bottom: 20px;
+  }
+}
+
+.food-categories__list {
+  @include ul-reset();
+  padding: 0 20px;
+}
+
+.food-categories__item {
+  background-color: #f2f2f2;
+  padding: 20px 20px 24px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.food-categories__caption {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.food-categories__content {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  &--line {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.food-categories__button {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}

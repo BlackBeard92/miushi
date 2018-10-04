@@ -3,36 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy index: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
-    <nav>
-      <a>
-        <img class="logo main-header__logo" src="http://placehold.it/200x45" width="200" height="45" alt="Логотип Cat Energy">
-      </a>
-      <button class="main-header__burgers-button" type="button"></button>
-      <ul class="menu-list main-header__list">
-        <li class="menu-list__item"><a>Главная</a></li>
-        <li class="menu-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="menu-list__item"><a href="form.html">Подбор программы</a></li>
+    <nav class="main-header__navigation">
+      <div class="main-header__conteiner">
+        <a class="main-header__logo-link">
+          <img class="logo main-header__logo" src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Cat Energy">
+        </a>
+        <button class="main-header__burgers-button" type="button"><span class="visually-hidden">Меню</span></button>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item menu-list__item--line">
+          <a class="menu-list__link">Главная</a>
+        </li>
+
+        <li class="menu-list__item menu-list__item--line">
+          <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+
+        <li class="menu-list__item menu-list__item--line">
+          <a class="menu-list__link" href="form.html">Подбор программы</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="screen">
-      <h1 class="screen__caption">Функциональное питание для котов</h1>
-      <p class="screen__exhortation">Занялся собой? Займись котом!</p>
-      <img class="screen__img" src="http://placehold.it/280x270" width="280" height="270" alt="Упаковка питания Cat Energy">
-      <a href="form.html">Подобрать программу</a>
+    <section class="screen screen--bottom">
+      <div class="screen__container-top">
+        <h1 class="screen__caption">Функциональное питание для котов</h1>
+        <p class="screen__exhortation">Занялся собой? Займись котом!</p>
+      </div>
+
+      <div class="screen__container-bottom">
+        <img class="screen__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка питания Cat Energy">
+        <a class="button-link button-link--screen" href="form.html">Подобрать программу</a>
+      </div>
     </section>
 
-    <section class="food-categories">
+    <section class="food-categories food-categories--margin">
       <h2 class="visually-hidden">Категории питания</h2>
       <ul class="food-categories__list">
         <li class="food-categories__item">
           <h3 class="food-categories__caption">Похудение</h3>
-          <p class="food-categories__content">
+          <p class="food-categories__content food-categories__content--line">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a class="food-categories__button" href="">Каталог Slim</a>
@@ -40,7 +56,7 @@
 
         <li class="food-categories__item">
           <h3 class="food-categories__caption">Набор массы</h3>
-          <p class="food-categories__content">
+          <p class="food-categories__content food-categories__content--line">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
           <a class="food-categories__button" href="">Каталог Pro</a>
@@ -75,42 +91,44 @@
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <table class="example__table">
-        <tr class="example__table-line">
+        <tr class="example__table-line example__table-line--td">
           <td class="example__line-item">5 кг</td>
           <td class="example__line-item">60 дней</td>
         </tr>
-        <tr class="example__table-line">
+        <tr class="example__table-line example__table-line--th">
           <th class="example__line-item">снижение веса</th>
           <th class="example__line-item">затрачено времени</th>
         </tr>
       </table>
       <p class="example__spending">Затраты на питание: 15 000 руб.</p>
-      <img class="example__img" src="http://placehold.it/311x232" width="311" height="232" alt="Толстый кот">
-      <img class="example__img" src="http://placehold.it/311x232" width="311" height="232" alt="Худой кот">
+      <img class="example__img" src="img/before-mobile@1x.png" width="280" height="230" alt="Толстый кот" >
+      <img class="example__img" src="img/after-mobile@1x.png" width="280" height="230" alt="Худой кот">
 
-      <label class="example__before" for="before">Было</label>
+      <label class="example__label" for="before">Было</label>
 
       <div class="example__switch">
         <input id="before" class="example__button-before" type="radio" name="switch" checked>
         <input id="after" class="example__button-after" type="radio" name="switch">
       </div>
 
-      <label class="example__after" for="after">Стало</label>
+      <label class="example__label" for="after">Стало</label>
     </section>
 
-    <section class="contacts">
-      <h2 class="visually-hidden contacts__caption">Контакты</h2>
-      <p class="contacts__content">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts contacts--index">
+      <div class="contacts__container">
+        <h2 class="visually-hidden contacts__caption">Контакты</h2>
+        <p class="contacts__content">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <a href=""><div class="contacts__map"></div></a>
     </section>
   </main>
 
   <footer class="main-footer">
-    <a>
-      <img class="logo-text main-footer__logo-text" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+    <a class="main-footer__logo-link">
+      <img class="logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
     </a>
-    <ul class="social main-footer__social">
+    <ul class="social social--line main-footer__social">
       <li class="social__item">
         <a class="social__link social__link--vk" href="">
           <span class="visually-hidden">ВКонтакте</span>
@@ -127,10 +145,12 @@
         </a>
       </li>
     </ul>
-    <a class="main-footer__link-left" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="main-footer__link-right" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="visually-hidden">Логотип HTML Academy</span>
-    </a>
+    <div class="copyright main-footer__copyright">
+      <a class="copyright__link copyright__link--left" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link copyright__link--right" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
+    </div>
   </footer>
   </body>
 </html>

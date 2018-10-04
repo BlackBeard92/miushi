@@ -1,0 +1,26 @@
+.catalog {
+  width: 100%;
+  padding: 20px 0 0;
+}
+
+.catalog__caption {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #111111;
+  margin-left: 20px;
+}
+
+.catalog__list {
+  @include ul-reset();
+}
+
+.catalog__item {
+  border-top: 1px solid #ededed;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}

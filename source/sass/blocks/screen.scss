@@ -1,0 +1,36 @@
+.screen {
+  color: #ffffff;
+  text-align: center;
+
+  &--bottom {
+    margin-bottom: 22px;
+  }
+}
+
+.screen__caption {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.screen__container-top {
+  min-height: 305px;
+  background-color: #68b738;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+
+.screen__exhortation {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.screen__container-bottom {
+  padding: 0 20px;
+}
