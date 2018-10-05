@@ -29,3 +29,29 @@
 .main-header__logo-link {
   line-height: 0;
 }
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 11px 30px;
+  }
+
+  .main-header__conteiner {
+    width: auto;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .main-header__navigation {
+    border-bottom: 0;
+  }
+
+  .main-header__burgers-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-header {
+    padding: 11px 40px;
+  }
+}

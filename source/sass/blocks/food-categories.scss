@@ -1,12 +1,6 @@
-.food-categories {
-  &--margin {
-    margin-bottom: 20px;
-  }
-}
-
 .food-categories__list {
   @include ul-reset();
-  padding: 0 20px;
+  padding: 0 20px 20px;
 }
 
 .food-categories__item {
@@ -44,4 +38,56 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: 768px) {
+  .food-categories__list {
+    padding: 0 30px 50px;
+  }
+
+  .food-categories__item {
+    padding: 80px 270px 53px 60px;
+    margin-bottom: 30px;
+  }
+
+  .food-categories__caption {
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  .food-categories__content {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+
+    &--line {
+      border-bottom: 0;
+    }
+  }
+
+  .food-categories__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .food-categories__list {
+    padding: 0 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .food-categories__item {
+    width: 570px;
+    padding: 40px 60px 60px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
 }

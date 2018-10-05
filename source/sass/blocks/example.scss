@@ -20,6 +20,7 @@
 
 .example__table {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .example__table-line {
@@ -44,8 +45,63 @@
   text-transform: uppercase;
 }
 
+.example__control {
+  width: 100%;
+}
+
 .example__label {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .example {
+    padding: 50px 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example__caption {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__spending {
+    text-align: left;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .example__table {
+    width: 385px;
+  }
+
+  .example__table-line {
+    font-size: 30px;
+    line-height: 37px;
+
+    &--th {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .example__container {
+    width: 570px;
+  }
 }

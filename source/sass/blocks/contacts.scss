@@ -32,3 +32,30 @@
   width: 100%;
   height: 400px;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    font-size: 16px;
+  }
+
+  .contacts__container {
+    padding: 60px 30px;
+  }
+
+  .contacts__content {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__container {
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto auto;
+  }
+}

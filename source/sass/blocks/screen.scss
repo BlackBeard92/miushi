@@ -1,10 +1,15 @@
 .screen {
   color: #ffffff;
   text-align: center;
+  padding-bottom: 22px;
+}
 
-  &--bottom {
-    margin-bottom: 22px;
-  }
+.screen__container-top {
+  background-color: #68b738;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
 }
 
 .screen__caption {
@@ -13,15 +18,6 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 20px;
-}
-
-.screen__container-top {
-  min-height: 305px;
-  background-color: #68b738;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 30px;
 }
 
 .screen__exhortation {
@@ -33,4 +29,46 @@
 
 .screen__container-bottom {
   padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .screen {
+    padding-left: 120px;
+    padding-right: 30px;
+    position: relative;
+    min-height: 825px;
+  }
+
+  .screen__container-top {
+    background-image: none;
+    background-color: transparent;
+    color: #111111;
+    text-align: left;
+    width: 427px;
+    margin-bottom: 50px;
+  }
+
+  .screen__caption {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 45px;
+  }
+
+  .screen__exhortation {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .screen__container-bottom {
+    padding: 0;
+    width: 245px;
+  }
+
+  .screen__img {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+  }
 }
