@@ -50,6 +50,9 @@
 
   .menu-list__link {
     padding: 12px 0;
-    border-bottom: 2px solid #68b738;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }

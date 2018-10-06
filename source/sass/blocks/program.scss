@@ -77,3 +77,41 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .program__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program__block {
+    width: 100%;
+  }
+
+  .program__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program__item {
+    width: 570px;
+
+    &--extra {
+      width: 245px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .program__discription {
+    width: 100%;
+  }
+
+  .program__block--characteristics {
+    width: 570px;
+  }
+
+  .program__block--control {
+    width: 570px;
+  }
+}
