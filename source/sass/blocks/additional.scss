@@ -29,3 +29,19 @@
   line-height: 14px;
   font-weight: 400;
 }
+
+@media (min-width: 768px) {
+  .additional {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1300px) {
+  .additional {
+    &--desktop {
+      width: 895px;
+    }
+  }
+}

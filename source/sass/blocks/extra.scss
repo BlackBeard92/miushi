@@ -21,3 +21,28 @@
 .extra__container {
   padding: 0 20px;
 }
+
+@media (min-width: 1300px) {
+  .extra {
+    &--desktop {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 40px 35px;
+    }
+  }
+
+  .extra__list {
+    padding: 0;
+  }
+
+  .extra__container {
+    padding: 0;
+    width: 245px;
+    margin-left: 80px;
+  }
+
+  .extra__caption {
+    margin-left: 0;
+    width: 100%;
+  }
+}

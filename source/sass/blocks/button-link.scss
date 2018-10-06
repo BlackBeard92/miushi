@@ -36,3 +36,11 @@
     }
   }
 }
+
+@media (min-width: 1300px) {
+  .button-link {
+    &--additional {
+      width: 245px;
+    }
+  }
+}
