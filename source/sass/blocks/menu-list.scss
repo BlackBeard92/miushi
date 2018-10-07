@@ -10,9 +10,49 @@
 .menu-list__item {
   text-align: center;
   text-transform: uppercase;
-  padding: 12px;
 
   &--line {
     border-top: 1px solid #e6e6e6;
+  }
+}
+
+.menu-list__link {
+  display: block;
+  padding: 12px;
+}
+
+@media (min-width: 768px) {
+  .main-header__navigation {
+    display: flex;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    width: auto;
+  }
+
+  .menu-list__item {
+    margin-left: 35px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--line {
+      border-top: none;
+    }
+  }
+
+  .menu-list__link {
+    padding: 12px 0;
+
+    &--active {
+      border-bottom: 2px solid #68b738;
+    }
   }
 }

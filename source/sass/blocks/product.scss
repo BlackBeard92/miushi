@@ -32,3 +32,16 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: 768px) {
+  .product {
+    width: 325px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: 1300px) {
+  .product {
+    width: 245px;
+  }
+}
