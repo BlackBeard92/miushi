@@ -1,10 +1,21 @@
 .menu-list {
   @include ul-reset();
   width: 100%;
-  color: #111111;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+
+  &--closed-js {
+    display: none;
+  }
+
+  &--opened-js {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .menu-list__item {
@@ -18,10 +29,11 @@
 
 .menu-list__link {
   display: block;
-  padding: 12px;
+  padding: 22px;
+  color: #111111;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-header__navigation {
     display: flex;
   }

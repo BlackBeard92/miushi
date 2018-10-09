@@ -1,12 +1,16 @@
 .example {
-  padding: 30px 20px;
+  padding: 17px 20px 35px;
   background-color: #f2f2f2;
   color: #111111;
 }
 
+.example__container {
+  margin-bottom: 41px;
+}
+
 .example__caption {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -15,17 +19,27 @@
 .example__description {
   font-family: "Arial", sans-serif;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  width: 270px;
 }
 
 .example__table {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.example__table tbody {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .example__table-line {
   font-size: 24px;
   line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 
   &--td {
     text-transform: uppercase;
@@ -39,14 +53,89 @@
   }
 }
 
+.example__line-item {
+  width: 124px;
+  position: relative;
+
+  &--td {
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding-bottom: 6px;
+    padding-top: 15px;
+  }
+
+  &--th::before,
+  &--th::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: 1px solid #cdcdcd;
+    top: 0;
+  }
+
+  &--th::before {
+    border-radius: 0 0 0 3px;
+    border-top: 0;
+    border-right: 0;
+    left: 0;
+  }
+
+  &--th::after {
+    border-radius: 0 0 3px 0;
+    border-top: 0;
+    border-left: 0;
+    right: 0;
+  }
+}
+
 .example__spending {
+  margin: 0;
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
 }
 
+.example__img {
+  width: 280px;
+  margin-bottom: 33px;
+
+  &--after {
+    display: none;
+  }
+}
+
 .example__control {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__button {
+  display: none;
+}
+
+.example__switch {
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  margin: 0 18px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 3px;
+    top: 3px;
+    left: 4px;
+  }
 }
 
 .example__label {
@@ -55,7 +144,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .example {
     padding: 50px 30px;
     background-color: #ffffff;
@@ -100,7 +189,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .example__container {
     width: 570px;
   }

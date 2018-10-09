@@ -5,11 +5,14 @@
 }
 
 .screen__container-top {
+  width: 100%;
+  min-height: 305px;
   background-color: #68b738;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 30px;
+  padding-top: 26px;
+  padding-bottom: 145px;
 }
 
 .screen__caption {
@@ -17,7 +20,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .screen__exhortation {
@@ -29,9 +32,14 @@
 
 .screen__container-bottom {
   padding: 0 20px;
+  margin-top: -140px;
 }
 
-@media (min-width: 768px) {
+.screen__img {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
   .screen {
     padding-left: 120px;
     padding-right: 30px;

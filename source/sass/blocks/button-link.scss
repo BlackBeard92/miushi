@@ -17,7 +17,7 @@
   &--screen {
     font-size: 14px;
     line-height: 18px;
-    padding-top: 10px;
+    padding-top: 11px;
   }
 
   &--submit {
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .button-link {
     &--screen {
       font-size: 20px;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .button-link {
     &--additional {
       width: 245px;
