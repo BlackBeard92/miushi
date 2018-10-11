@@ -24,8 +24,9 @@
 }
 
 .example__table {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   text-align: center;
+  border-collapse: collapse;
 }
 
 .example__table tbody {
@@ -65,9 +66,14 @@
     padding-top: 15px;
   }
 
+  &--th {
+    padding: 0 22px;
+    font-weight: 400;
+  }
+
   &--th::before,
   &--th::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 20px;
     height: 10px;
@@ -127,7 +133,7 @@
   margin: 0 18px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 35px;
     height: 6px;
@@ -146,7 +152,8 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 50px 30px;
+    padding: 0;
+    padding-top: 43px;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -155,23 +162,34 @@
   .example__container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 230px;
+    padding: 0 30px;
   }
 
   .example__caption {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     font-size: 60px;
+    width: 100%;
   }
 
   .example__description {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
+    width: 99%;
   }
 
   .example__spending {
-    text-align: left;
     margin-left: auto;
     font-size: 20px;
+    width: 175px;
+    text-align: right;
+    padding-top: 13px;
+  }
+
+  .example__br {
+    display: block;
+    margin-top: 9px;
   }
 
   .example__table {
@@ -181,16 +199,155 @@
   .example__table-line {
     font-size: 30px;
     line-height: 37px;
+    justify-content: flex-start;
 
     &--th {
       font-size: 14px;
       line-height: 14px;
     }
   }
+
+  .example__line-item {
+    margin-left: 43px;
+    width: 161px;
+
+    &--td {
+      padding-bottom: 12px;
+    }
+
+    &--th {
+      padding: 0;
+    }
+
+    &--th::after,
+    &--th::before {
+      height: 8px;
+      width: 7px;
+    }
+
+    &--th:first-child::after,
+    &--th:first-child::before {
+      width: 20px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .example__slider {
+    width: 100%;
+    padding: 0 30px 70px;
+    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .example__control {
+    padding: 0 56px;
+  }
+
+  .example__img {
+    width: 677px;
+    height: 499px;
+    margin-bottom: 34px;
+    margin-top: -170px;
+  }
+
+  .example__label {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #b8b8b8;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: 0;
+    }
+  }
+
+  .example__switch {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+    margin: 0 23px;
+
+    &::after {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 13px #ffffff, 0 2px 5px rgba(0, 0, 0, 0.15);
+      top: -14px;
+      left: 198px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: inset 0 0 0 13px #ffffff, 0 3px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active::after {
+      box-shadow: inset 0 0 0 2px #68b738, inset 0 0 0 13px #ffffff, 0 3px 5px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background-image: linear-gradient(to bottom, #ffffff 177px, #f2f2f2 177px);
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .example__caption {
+    margin-bottom: 145px;
+    width: 100%;
+  }
+
+  .example__description {
+    width: 83%;
+    margin-bottom: 68px;
+  }
+
   .example__container {
     width: 570px;
+    padding-left: 40px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .example__spending {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .example__br {
+    display: inline;
+    margin-top: 0;
+    margin-left: 60px;
+  }
+
+  .example__table {
+    margin-bottom: 55px;
+  }
+
+  .example__slider {
+    margin-top: 135px;
+    width: 653px;
+    padding: 0 40px 68px 0;
+    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  .example__label {
+    padding-bottom: 7px;
+  }
+
+  .example__control {
+    padding: 0 0 0 43px;
   }
 }

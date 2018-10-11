@@ -24,4 +24,30 @@
     width: 164px;
     padding: 0;
   }
+
+  .copyright__link {
+    position: relative;
+    padding-left: 137px;
+
+    &--left {
+      display: none;
+    }
+
+    &--right::before {
+      content: "HTML Academy";
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+  }
+
+  .copyright__link:hover .copyright__logo-academy,
+  .copyright__link:focus .copyright__logo-academy {
+    fill: #68b738;
+  }
+
+  .copyright__link:active .copyright__logo-academy,
+  .copyright__link:active {
+    opacity: 0.3;
+  }
 }

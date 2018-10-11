@@ -44,7 +44,8 @@
     padding-left: 120px;
     padding-right: 30px;
     position: relative;
-    min-height: 825px;
+    min-height: 811px;
+    padding-bottom: 0;
   }
 
   .screen__container-top {
@@ -53,14 +54,16 @@
     color: #111111;
     text-align: left;
     width: 427px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    padding: 0;
+    min-height: 0;
   }
 
   .screen__caption {
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   .screen__exhortation {
@@ -71,12 +74,47 @@
   .screen__container-bottom {
     padding: 0;
     width: 245px;
+    margin-top: 0;
   }
 
   .screen__img {
+    width: 709px;
     position: absolute;
     z-index: -1;
-    top: 50%;
-    left: 50%;
+    top: 202px;
+    left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .screen {
+    min-height: 696px;
+    background-color: #68b738;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 112% 0;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .screen__container-top {
+    margin-bottom: 0;
+    padding: 222px 0 52px 120px;
+    width: 655px;
+    background-color: #ffffff;
+  }
+
+  .screen__container-bottom {
+    padding: 0 285px 189px 120px;
+    width: 650px;
+    margin-top: 0;
+    background-color: #ffffff;
+  }
+
+  .screen__img {
+    width: 552px;
+    top: 142px;
+    left: 503px;
+    z-index: 0;
   }
 }

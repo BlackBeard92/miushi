@@ -46,7 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 11px 30px;
+    padding: 30px 30px 0;
+    margin-bottom: 64px;
   }
 
   .main-header__conteiner {
@@ -66,6 +67,10 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    padding: 11px 40px;
+    padding: 61px 40px 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
   }
 }

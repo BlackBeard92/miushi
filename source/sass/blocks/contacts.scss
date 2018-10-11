@@ -44,12 +44,27 @@
   }
 
   .contacts__container {
-    padding: 60px 30px;
+    padding: 66px 70px 57px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    text-align: right;
+  }
+
+  .contacts__br {
+    display: block;
+    margin-top: 20px;
   }
 
   .contacts__content {
     font-size: 20px;
     line-height: 25px;
+    width: 200px;
+  }
+
+  .contacts__map {
+    height: 396px;
   }
 }
 
@@ -61,6 +76,18 @@
   .contacts__container {
     background-color: #ffffff;
     position: absolute;
-    margin: auto auto;
+    top: 94px;
+    left: 40px;
+    padding: 66px 48px 57px 75px;
+  }
+
+  .contacts__address {
+    width: 197px;
+    text-align: left;
+    margin-left: 51px;
+  }
+
+  .contacts__map {
+    height: 400px;
   }
 }

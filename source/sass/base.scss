@@ -67,5 +67,6 @@ img {
 @media (min-width: $desktop-width) {
   body {
     width: $desktop-width;
+    position: relative;
   }
 }
