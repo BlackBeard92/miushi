@@ -1,6 +1,9 @@
 .main-footer {
   background-color: #f2f2f2;
   width: 100%;
+}
+
+.main-footer__container {
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -12,9 +15,9 @@
   margin: 40px auto 30px;
 }
 
-@media (min-width: 768px) {
-  .main-footer {
-    padding: 60px 30px;
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    padding: 40px 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -22,5 +25,13 @@
 
   .main-footer__logo-link {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    padding: 40px;
+    margin: 0 auto;
+    width: $desktop-width;
   }
 }

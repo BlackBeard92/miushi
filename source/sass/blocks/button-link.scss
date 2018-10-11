@@ -17,7 +17,7 @@
   &--screen {
     font-size: 14px;
     line-height: 18px;
-    padding-top: 10px;
+    padding-top: 11px;
   }
 
   &--submit {
@@ -26,22 +26,31 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .button-link {
     &--screen {
       font-size: 20px;
       line-height: 20px;
-      padding-top: 16px;
+      padding-top: 15px;
       padding-bottom: 16px;
     }
 
     &--submit {
       width: 283px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: $desktop-width) {
   .button-link {
     &--additional {
       width: 245px;
