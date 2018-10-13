@@ -1,11 +1,12 @@
 .example {
-  padding: 17px 20px 35px;
+  padding: 17px 0 35px;
   background-color: #f2f2f2;
   color: #111111;
 }
 
 .example__container {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
+  padding: 0 20px;
 }
 
 .example__caption {
@@ -62,7 +63,7 @@
     border: 1px solid #cdcdcd;
     border-bottom: none;
     border-radius: 3px 3px 0 0;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     padding-top: 15px;
   }
 
@@ -104,8 +105,8 @@
 }
 
 .example__img {
-  width: 280px;
-  margin-bottom: 33px;
+  width: 320px;
+  margin-bottom: 30px;
 
   &--after {
     display: none;
@@ -162,7 +163,7 @@
   .example__container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 230px;
+    margin-bottom: 233px;
     padding: 0 30px;
   }
 
@@ -237,18 +238,18 @@
 
   .example__slider {
     width: 100%;
-    padding: 0 30px 70px;
+    padding: 0 10px 70px 47px;
     background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   .example__control {
-    padding: 0 56px;
+    justify-content: flex-start;
+    padding-left: 52px;
   }
 
   .example__img {
-    width: 677px;
-    height: 499px;
-    margin-bottom: 34px;
+    width: 689px;
+    margin-bottom: 15px;
     margin-top: -170px;
   }
 
@@ -263,7 +264,7 @@
     }
 
     &:active {
-      border-bottom: 0;
+      border-bottom: 1px solid transparent;
     }
   }
 
@@ -297,7 +298,15 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to bottom, #ffffff 177px, #f2f2f2 177px);
+    background-image: linear-gradient(to bottom, #ffffff 177px, transparent 177px),
+      linear-gradient(to right, #f2f2f2 60%, #eaeaea 60%);
+  }
+
+  .example__wrap {
+    width: $desktop-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -308,12 +317,12 @@
   }
 
   .example__description {
-    width: 83%;
+    width: 85%;
     margin-bottom: 68px;
   }
 
   .example__container {
-    width: 570px;
+    width: 560px;
     padding-left: 40px;
     padding-right: 0;
     margin-bottom: 0;
@@ -338,9 +347,15 @@
 
   .example__slider {
     margin-top: 135px;
-    width: 653px;
-    padding: 0 40px 68px 0;
-    background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    width: 740px;
+    padding: 0 0 68px 0;
+    background-image: linear-gradient(to right, #f2f2f2 56%, #eaeaea 56%);
+  }
+
+  .example__img {
+    margin-bottom: 38px;
+    margin-top: -191px;
+    margin-left: 49px;
   }
 
   .example__label {
@@ -348,6 +363,6 @@
   }
 
   .example__control {
-    padding: 0 0 0 43px;
+    padding: 0 0 0 130px;
   }
 }

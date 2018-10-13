@@ -1,12 +1,12 @@
 .main-header {
-  padding-top: 14px;
+  padding-top: 13px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
 }
 
 .main-header__conteiner {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -46,8 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 30px 30px 0;
-    margin-bottom: 64px;
+    padding: 24px 30px 0;
+    margin-bottom: 59px;
   }
 
   .main-header__conteiner {
@@ -58,6 +58,7 @@
 
   .main-header__navigation {
     border-bottom: 0;
+    align-items: center;
   }
 
   .main-header__burgers {
@@ -67,10 +68,16 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    padding: 61px 40px 0;
+    padding: 54px 0 0;
     position: absolute;
     z-index: 2;
     top: 0;
     width: 100%;
+  }
+
+  .main-header__navigation {
+    padding: 0 40px;
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }
