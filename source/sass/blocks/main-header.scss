@@ -1,8 +1,9 @@
 .main-header {
-  padding-top: 13px;
+  padding-top: 12px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  min-height: 66px;
 }
 
 .main-header__conteiner {
@@ -69,10 +70,17 @@
 @media (min-width: $desktop-width) {
   .main-header {
     padding: 54px 0 0;
-    position: absolute;
-    z-index: 2;
-    top: 0;
     width: 100%;
+
+    &--form {
+      margin-bottom: 75px;
+    }
+
+    &--index {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+    }
   }
 
   .main-header__navigation {

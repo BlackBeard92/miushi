@@ -7,7 +7,7 @@
   color: #ffffff;
   text-align: center;
   background-color: #68b738;
-  padding: 12px 0;
+  padding: 12px;
 
   &--show-more {
     color: #444444;
@@ -21,22 +21,31 @@
   }
 
   &--submit {
+    width: 280px;
+    margin: 0 auto;
+    padding: 10px;
     border: none;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .button-link {
+    font-size: 20px;
+
     &--screen {
       font-size: 20px;
       line-height: 20px;
-      padding-top: 15px;
-      padding-bottom: 16px;
+      padding: 15px 15px 16px;
     }
 
     &--submit {
+      font-size: 20px;
+      line-height: 20px;
       width: 283px;
+      padding: 16px;
+      margin-left: 71px;
+      margin-right: 0;
     }
 
     &:hover,
@@ -54,6 +63,11 @@
   .button-link {
     &--additional {
       width: 245px;
+    }
+
+    &--submit {
+      width: 570px;
+      margin-left: 40px;
     }
   }
 }
