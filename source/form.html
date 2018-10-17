@@ -51,12 +51,12 @@
           <ul class="program__list">
             <li class="program__item">
               <label class="program__label program__label--name" for="name">Имя:*</label>
-              <input class="program__input program__input--name" id="name" name="name" type="text" placeholder="Барсик" required>
+              <input class="program__input program__input--name" id="name" name="name" type="text" placeholder="Барсик">
             </li>
 
             <li class="program__item">
               <label class="program__label program__label--weight" for="weight">Вес (кг):*</label>
-              <input class="program__input program__input--weight" id="weight" name="weight" type="text" placeholder="7" required>
+              <input class="program__input program__input--weight" id="weight" name="weight" type="text" placeholder="7">
             </li>
 
             <li class="program__item">
@@ -92,12 +92,12 @@
           <ul class="program__list">
             <li class="program__item program__item--contacts">
               <label class="program__label program__label--email" for="email">E-mail:*</label>
-              <input class="program__input program__input--email" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
+              <input class="program__input program__input--email" id="email" name="email" type="email" placeholder="kuklachev@gmail.com">
             </li>
 
             <li class="program__item program__item--contacts">
               <label class="program__label program__label--phone" for="phone">Телефон:*</label>
-              <input class="program__input program__input--phone" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="program__input program__input--phone" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </div>
@@ -150,7 +150,7 @@
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__br">Санкт-Петербург</span></p>
         </div>
       </div>
-      <a href=""><div class="contacts__map"></div></a>
+      <a class="contacts__link-map" href="https://yandex.ru/maps/-/CBB8NTdSLA"><div class="contacts__map" id="map"></div></a>
     </section>
   </main>
 
@@ -227,5 +227,8 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=fdfd1701-42d0-4fed-bbf9-d66edcdc1f29&lang=ru_RU" type="text/javascript"></script>
+  </script>
+  <script src="js/map.js"></script>
 </body>
 </html>

@@ -7,14 +7,16 @@
   color: #ffffff;
   text-align: center;
   background-color: #68b738;
-  padding: 12px;
+  padding: 9px;
 
   &--show-more {
+    padding: 10px;
     color: #444444;
     background-color: #f2f2f2;
   }
 
   &--screen {
+    padding: 12px;
     font-size: 14px;
     line-height: 18px;
     padding-top: 11px;
@@ -27,11 +29,18 @@
     border: none;
     margin-bottom: 20px;
   }
+
+  &--additional {
+    padding: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button-link {
-    font-size: 20px;
+    &--product {
+      padding: 10px;
+      width: 250px;
+    }
 
     &--screen {
       font-size: 20px;
@@ -56,11 +65,28 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+
+    &--show-more {
+      width: 250px;
+    }
+
+    &--show-more:hover,
+    &--show-more:focus {
+      background-color: #ebebeb;
+    }
+
+    &--show-more:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .button-link {
+    &--product {
+      width: 170px;
+    }
+
     &--additional {
       width: 245px;
     }
@@ -68,6 +94,10 @@
     &--submit {
       width: 570px;
       margin-left: 40px;
+    }
+
+    &--show-more {
+      width: 170px;
     }
   }
 }

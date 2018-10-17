@@ -1,5 +1,5 @@
 .program {
-  padding: 15px 0 32px;
+  padding: 15px 0 30px;
   font-size: 16px;
   color: #222222;
 }
@@ -30,7 +30,7 @@
     padding: 20px;
     border-bottom: 1px solid #e6e6e6;
     border-top: 1px solid #e6e6e6;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   &--contacts {
@@ -56,6 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 30px;
 
   &:last-child {
     margin-bottom: 0;
@@ -66,15 +67,24 @@
   position: relative;
   margin-bottom: 33px;
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     height: 3px;
     background-color: #68b738;
-    width: 100vw;
-    right: 0;
     top: 13px;
     z-index: -1;
+  }
+
+  &::after {
+    width: 100vw;
+    right: 0;
+  }
+
+  &::before {
+    width: calc((100vw - 300px) / 2);
+    left: 309px;
   }
 }
 
@@ -308,6 +318,12 @@
     &::after {
       top: 22px;
     }
+
+    &::before {
+      width: calc((100vw - 750px) / 2);
+      left: 757px;
+      top: 22px;
+    }
   }
 
   .program__sub-caption {
@@ -423,6 +439,17 @@
     line-height: 30px;
     height: 174px;
     padding: 9px 17px;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: inset 0 0 0 1px #444444;
+      border: 1px solid #444444;
+    }
   }
 
   .program__checkbox-label {
@@ -530,14 +557,8 @@
 
   .program__container-h {
     &::before {
-      content: "";
-      position: absolute;
-      height: 3px;
-      background-color: #68b738;
       width: calc((100vw - 1277px) / 2);
       left: 1280px;
-      top: 22px;
-      z-index: -1;
     }
   }
 
