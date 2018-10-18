@@ -1,5 +1,5 @@
 .additional {
-  padding: 14px 0 16px;
+  padding: 13px 0 19px;
 
   &--line {
     border-top: 1px solid #cdcdcd;
@@ -12,22 +12,31 @@
 
 .additional__caption {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  max-width: 300px;
 }
 
 .additional__table {
   margin-bottom: 13px;
+  border-collapse: collapse;
+  width: 280px;
 }
 
 .additional__line-item {
   font-family: "Arial", sans-serif;
   line-height: 14px;
   font-weight: 400;
+  width: 140px;
+  padding: 0;
+
+  &--td {
+    text-align: right;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,13 +44,69 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 38px 27px;
+
+    &--line {
+      border: 1px solid #cdcdcd;
+      border-bottom: 0;
+    }
+  }
+
+  .additional__caption {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 26px;
+    padding-right: 10px;
+  }
+
+  .additional__table {
+    margin-bottom: 22px;
+  }
+
+  .additional__line-item {
+    font-size: 16px;
+    line-height: 20px;
+    width: 75px;
+    padding-top: 4px;
+    text-align: right;
+
+    &--th {
+      width: 150px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
-    &--desktop {
-      width: 895px;
+    padding: 16px 0 15px;
+    width: 895px;
+    justify-content: flex-start;
+
+    &--line {
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  .additional__caption {
+    margin-bottom: 0;
+  }
+
+  .additional__table {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 315px;
+  }
+
+  .additional__line-item {
+    text-align: left;
+    width: 50px;
+    padding-right: 10px;
+
+    &--th {
+      width: 173px;
     }
   }
 }
