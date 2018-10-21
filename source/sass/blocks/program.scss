@@ -129,24 +129,6 @@
   position: relative;
   border: 1px solid #e6e6e6;
 
-  &--loss,
-  &--gain,
-  &--consultation,
-  &--water,
-  &--milk,
-  &--sweetener,
-  &--vitamins {
-    display: none;
-  }
-
-  &:checked + .program__radio-label::before {
-    background-color: #68b738;
-  }
-
-  &:checked + .program__checkbox-label::after {
-    display: block;
-  }
-
   &--email,
   &--phone {
     margin-left: 10px;
@@ -163,13 +145,14 @@
   &--phone {
     background-image: url("../img/icon-phone.svg");
     background-position: 94% 50%;
-    background-size: 20px;
+    background-size: 20px 20px;
   }
 }
 
 .program__radio-label {
   padding: 6px 0 6px 45px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -183,6 +166,10 @@
     background-color: #ffffff;
     box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 9px #ffffff;
   }
+}
+
+.program__radio:checked + .program__radio-label::before {
+  background-color: #68b738;
 }
 
 .program__textarea {
@@ -202,6 +189,7 @@
 .program__checkbox-label {
   padding: 6px 0 6px 45px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -225,6 +213,10 @@
     transform: rotate(-48deg);
     display: none;
   }
+}
+
+.program__checkbox:checked + .program__checkbox-label::after {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -422,16 +414,16 @@
       margin-top: -20px;
       box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 11px #ffffff;
     }
+  }
 
-    &:hover::before,
-    &:focus::before {
-      box-shadow: inset 0 0 0 1px #bababa, inset 0 0 0 11px #ffffff;
-    }
+  .program__radio:focus + .program__radio-label::before,
+  .program__radio-label:hover::before {
+    box-shadow: inset 0 0 0 1px #bababa, inset 0 0 0 11px #ffffff;
+  }
 
-    &:active::before,
-    &:active {
-      opacity: 0.3;
-    }
+  .program__radio:active + .program__radio-label::before,
+  .program__radio:active + .program__radio-label {
+    opacity: 0.3;
   }
 
   .program__textarea {
@@ -460,20 +452,20 @@
       height: 40px;
     }
 
-    &:hover::before,
-    &:focus::before {
-      box-shadow: inset 0 0 0 1px #bababa;
-    }
-
-    &:active::before,
-    &:active {
-      opacity: 0.3;
-    }
-
     &::after {
       left: 10px;
       top: 11px;
     }
+  }
+
+  .program__checkbox:focus + .program__checkbox-label::before,
+  .program__checkbox-label:hover::before {
+    box-shadow: inset 0 0 0 1px #bababa;
+  }
+
+  .program__checkbox:active + .program__checkbox-label::before,
+  .program__checkbox:active + .program__checkbox-label {
+    opacity: 0.3;
   }
 }
 

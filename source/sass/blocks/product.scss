@@ -70,6 +70,10 @@
   font-weight: 400;
   width: 70px;
 
+  &--th {
+    text-align: left;
+  }
+
   &--td {
     padding-left: 2px;
     text-align: right;
