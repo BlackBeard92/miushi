@@ -56,15 +56,17 @@
     }
   }
 
-  .social__icon {
-    &:hover,
-    &:focus {
-      fill: #68b738;
-    }
+  .social__link:hover .social__icon,
+  .social__link:focus .social__icon {
+    fill: #68b738;
 
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .social__link:active .social__icon {
+    opacity: 0.3;
   }
 
   .social__vk {
