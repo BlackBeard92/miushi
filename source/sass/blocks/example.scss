@@ -27,12 +27,14 @@
 .example__table {
   margin-bottom: 19px;
   text-align: center;
-  border-collapse: collapse;
+  border-spacing: 0;
+  width: 280px;
 }
 
 .example__table tbody {
   display: flex;
   flex-wrap: wrap;
+  width: 280px;
 }
 
 .example__table-line {
@@ -41,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 280px;
 
   &--td {
     text-transform: uppercase;
@@ -58,6 +60,7 @@
 .example__line-item {
   width: 124px;
   position: relative;
+  display: block;
 
   &--td {
     border: 1px solid #cdcdcd;
@@ -160,6 +163,10 @@
     flex-wrap: wrap;
   }
 
+  .example__wrap {
+    width: 100%;
+  }
+
   .example__container {
     display: flex;
     flex-wrap: wrap;
@@ -177,7 +184,7 @@
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
-    width: 99%;
+    width: 700px;
   }
 
   .example__spending {
@@ -197,10 +204,15 @@
     width: 385px;
   }
 
+  .example__table tbody {
+    width: 385px;
+  }
+
   .example__table-line {
     font-size: 30px;
     line-height: 37px;
     justify-content: flex-start;
+    width: 385px;
 
     &--th {
       font-size: 14px;
