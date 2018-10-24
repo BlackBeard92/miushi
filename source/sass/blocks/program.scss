@@ -228,6 +228,7 @@
 .program__checkbox:checked + .program__checkbox-label::after {
   display: block;
 }
+
 .program__checkbox:disabled + .program__checkbox-label,
 .program__checkbox:disabled + .program__checkbox-label::before {
   opacity: 0.3;
