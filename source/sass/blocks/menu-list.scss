@@ -46,6 +46,12 @@
     line-height: 25px;
     font-weight: 400;
     width: auto;
+    padding-left: 30px;
+    margin-top: 7px;
+
+    &--index {
+      max-width: 600px;
+    }
   }
 
   .menu-list__item {

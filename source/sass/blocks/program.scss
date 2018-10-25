@@ -172,6 +172,16 @@
   background-color: #68b738;
 }
 
+.program__radio:disabled + .program__radio-label,
+.program__radio:disabled + .program__radio-label::before {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.program__radio:disabled + .program__radio-label::before {
+  box-shadow: inset 0 0 0 1px #bababa, inset 0 0 0 11px #ffffff;
+}
+
 .program__textarea {
   font-size: 16px;
   line-height: 18px;
@@ -217,6 +227,16 @@
 
 .program__checkbox:checked + .program__checkbox-label::after {
   display: block;
+}
+
+.program__checkbox:disabled + .program__checkbox-label,
+.program__checkbox:disabled + .program__checkbox-label::before {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.program__checkbox:disabled + .program__checkbox-label::before {
+  box-shadow: inset 0 0 0 1px #bababa;
 }
 
 @media (min-width: $tablet-width) {
@@ -274,6 +294,7 @@
   .program__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .program__item {
@@ -538,7 +559,7 @@
       margin-left: 45px;
     }
 
-    &--extra:nth-child(5n+1) {
+    &--extra:nth-child(4n+1) {
       margin-left: 0;
     }
 
