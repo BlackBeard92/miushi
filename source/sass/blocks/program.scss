@@ -94,20 +94,9 @@
   line-height: 24px;
   font-weight: 400;
   color: #111111;
-  padding-left: 20px;
+  padding: 0 20px;
   background-color: #ffffff;
-
-  &--contacts {
-    width: 220px;
-  }
-
-  &--comment {
-    width: 162px;
-  }
-
-  &--extra {
-    width: 184px;
-  }
+  display: inline-block;
 }
 
 .program__small-text {
@@ -344,18 +333,6 @@
     line-height: 36px;
     padding: 0 39px;
     margin-left: 30px;
-
-    &--contacts {
-      width: 593px;
-    }
-
-    &--comment {
-      width: 260px;
-    }
-
-    &--extra {
-      width: 292px;
-    }
   }
 
   .program__small-text {
